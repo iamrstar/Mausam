@@ -1,69 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>MAUSAM</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" type="image/x-icon" href="./Images/favicon (2).ico (2).ico">
+
 </head>
+
 <body>
     <div class="wrapper">
-        <h1>Mausam Vibhag</h1>
-
-        <div class="tab-container">
-            <p class="tab" data-userWeather>Your weather</p>
-            <p class="tab" data-searchForm>Search Weather</p>
-        </div>
-
-        <div class="weather-container">
-            <div class="grant-location-container">
-                <img src="/Images/location.png" width="80" height="80" loading="lazy">
-                <p>grant location access</p>
-                <p>Allow Access to get weather information</p>
-                <button class="btn" data-grantAccess>grant Access</button>
+        <div class="main-container">
+            <h1 class="head">MAUSAM</h1>
+            <div class="tab-container">
+                <p class="tab" data-userweather>Your weather</p>
+                <p class="tab" data-searchweather>Search weather</p>
             </div>
+            <div class="weather-container">
+                <!-- grant container -->
+                <div class="grant-location-container sub-container">
 
-            <form class="form-container" data-searchForm>
-                <input placeholder="Search any city...." data-searchInput>
-                <button class="btn" type="submit">
-                    <img src="/Images/search.png" width="20" height="20" loading="lazy">
-                </button>
-            </form>
 
-            <div class="loading-container">
-                <img src="/Images/loading.gif" width="150" height="150">
-                <p>loading</p>
-            </div>
 
-            <div class="user-info-container">
-                <div class="name">
-                    <p data-city></p>
-                    <img data-countryIcon>
+                    <img src="./Images/cloud.png" width="80" height="80" loading="lazy">
+                    <h1>Grant location access</h1>
+                    <p>Allow access to get weather information</p>
+                    <button class="btn" data-grantlocation>GRANT ACCESS</button>
+
+
                 </div>
-                <p data-weatherDesc></p>
-                <img data-weatherIcon>
-                <p data-temp></p>
-                <div class="parameter-container">
-                    <div class="parameter">
-                        <img src="/Images/wind.png" alt="">
-                        <p>Windspeed</p>
-                        <p data-windSpeed></p>
+                <!-- search form -->
+                <form class="form-container" data-searchForm>
+                    <input placeholder="Search city..." data-searchInput>
+                    <button class="btn">
+                        <img src="./Images/search.png" width="15" height="15" loading="lazy">
+                    </button>
+                </form>
+                <!-- loading-screen -->
+                <div class="loading-container sub-container">
+                    <img src="./Images/loading.gif" width="150" height="150">
+                    <p>loading.....</p>
+                </div>
+
+                <!-- Show weather info -->
+                <div class="user-info-container sub-container">
+
+                    <!-- city and flag -->
+                    <div class="name">
+                        <p data-cityName></p>
+                        <img data-country-icon>
                     </div>
-                    <div class="parameter">
-                        <img src="/Images/humidity.png" alt="">
-                        <p>humidity</p>
-                        <p data-humidity></p>
-                    </div>
-                    <div class="parameter">
-                        <img src="Images/cloud.png" alt="">
-                        <p>Clouds</p>
-                        <p data-cloudiness></p>
+
+                    <!-- weather description -->
+                    <p data-weatherDesc style="font-weight: 500; "></p>
+
+                    <!-- weather icon -->
+                    <img data-weatherIcon> <!-- sara values  js se milega samjh lo dynamic values hai isiliye-->
+                    <!-- city temperature -->
+                    <p data-temp style="font-weight: bolder; font-size: 50px; margin-bottom: 20px;"></p>
+
+                    <div class="parameter-container">
+                        <!-- card-1 -->
+                        <div class="parameter">
+                            <img src="./Images/wind.png" alt="">
+                            <p>Windspeed</p>
+                            <p data-windspeed></p>
+                        </div>
+                        <div class="parameter">
+                            <img src="./Images/humidity.png" alt="">
+                            <p>Humidity</p>
+                            <p data-humidity></p>
+                        </div>
+                        <div class="parameter">
+                            <img src="./Images/cloud.png" alt="">
+                            <p>Clouds</p>
+                            <p data-clouds></p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <script src="index.js"></script>
+    <script src="./index.js"></script>
 </body>
+
 </html>
