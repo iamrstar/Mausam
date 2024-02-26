@@ -221,3 +221,7 @@
 .form-container ::-ms-input-placeholder{
     color: rgb(58, 57, 57);
 }
+
+@media screen {
+    
+}
