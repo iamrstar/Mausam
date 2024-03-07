@@ -20,7 +20,7 @@
 .wrapper{
     /* background: radial-gradient(circle at 50% 50%, rgba(0, 255, 235, 1) 0%, rgba(7, 108, 187, 1) 100%);
     background-repeat: no-repeat; */
-    background-image: url(./Images/bg.avif);
+    background-image: url(./Images/MAusam\ \(2\).png);
     object-fit: cover;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -220,3 +220,53 @@
 }
 .form-container ::-ms-input-placeholder{
     color: rgb(58, 57, 55);
+}
+
+@media only screen and (max-width: 600px) {
+    .wrapper {
+        background-image: url(Images/phone.png);
+       object-fit: fill;
+
+    .main-container {
+        gap: 20px; 
+        max-width: 90%; 
+    }
+
+    .tab-container {
+        width: 90%; 
+        flex-direction: column; 
+        gap: 10px; 
+    }
+
+    .weather-container {
+        padding: 20px; 
+    }
+
+    .parameter-container {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center; 
+        gap: 20px; 
+    }
+
+    .parameter {
+        width: calc(50% - 20px); 
+        height: auto; 
+    }
+
+    .form-container {
+        width: 90%; 
+    }
+
+   .grant-location-container{
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+
+background-repeat: no-repeat;
+background-size: 100%;
+}
+
+   }
+}

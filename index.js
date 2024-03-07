@@ -29,6 +29,8 @@ const loadingScreen = document.querySelector(".loading-container");
 const infoContainer = document.querySelector(".user-info-container");
 
 let currtab = usertab;
+
+
 //api key
 const API_KEY = "57072374efb0f98f988abe0a3cc766ce";
 // for getting the background color on the current tab
@@ -188,3 +190,4 @@ async function fetchSearchWeatherInfo(city){
         alert("Inavaild Input..")
     }
 }
+
