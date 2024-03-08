@@ -29,6 +29,7 @@
     height: 100vh;
     width: 100vw;
     overflow-y: hidden;
+    overflow: hidden;
 }
 .main-container{
     margin: 0 auto;
@@ -161,9 +162,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    background-color: rgba(250, 250, 250, 0.418);
+    /* background-color: rgba(250, 250, 250, 0.418); */
     border-radius: 4px;
-    padding: 0 30px 30px 30px;
+    padding: 0 35px 30px;
     width: 150px;
     height: 150px;
     
@@ -246,14 +247,16 @@
 
     .parameter-container {
         display: flex;
-        flex-wrap: wrap; 
+        flex-direction: row; 
         justify-content: center; 
         gap: 20px; 
+        
     }
 
     .parameter {
-        width: calc(50% - 20px); 
+        width: 30%; 
         height: auto; 
+        padding: 0 35px 30px 30px;
     }
 
     .form-container {
