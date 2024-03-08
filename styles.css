@@ -225,16 +225,18 @@
 @media only screen and (max-width: 600px) {
     .wrapper {
         background-image: url(Images/phone.png);
+        overflow-y: hidden;
        object-fit: fill;
+    }
 
     .main-container {
-        gap: 20px; 
-        max-width: 90%; 
+        gap: 30px; 
+        max-width: 95%; 
     }
 
     .tab-container {
         width: 90%; 
-        flex-direction: column; 
+        flex-direction: r; 
         gap: 10px; 
     }
 
@@ -255,7 +257,13 @@
     }
 
     .form-container {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 15%;
         width: 90%; 
+        gap: 7px;
+      
     }
 
    .grant-location-container{
@@ -263,10 +271,6 @@ display: flex;
 justify-content: center;
 align-items: center;
 position: relative;
-
-background-repeat: no-repeat;
-background-size: 100%;
 }
 
-   }
 }
